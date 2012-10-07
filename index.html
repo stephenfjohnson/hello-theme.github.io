@@ -1,183 +1,160 @@
-<!DOCTYPE html>
-
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!doctype html>
 <head>
-  <meta charset="utf-8" />
-
-  <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width" />
-
-  <title>Welcome to Foundation</title>
-  
-  <!-- Included CSS Files (Uncompressed) -->
-  <!--
-  <link rel="stylesheet" href="stylesheets/foundation.css">
-  -->
-  
-  <!-- Included CSS Files (Compressed) -->
-  <link rel="stylesheet" href="stylesheets/foundation.css">
-  <link rel="stylesheet" href="stylesheets/app.css">
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-
-  <script src="javascripts/modernizr.foundation.js"></script>
-
-  <!-- IE Fix for HTML5 Tags -->
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-
-</head>
-<body>
-  
-  <!-- Header and Nav -->
-  
-  <div class="row">
-    <h1><img src="images/logo.png" /></h1>
-    
-    <div class="nine columns">
-      <ul class="nav-bar right">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-  
-  <!-- End Header and Nav -->
-  
-  
-  <!-- First Band (Slider) -->
-  <!-- The Orbit slider is initialized at the bottom of the page by calling .orbit() on #slider -->
-    
-  <div class="row">
-    <div class="twelve columns">
-      <div id="slider">
-        <img src="http://placehold.it/1000x400&text=[img 1]" />
-        <img src="http://placehold.it/1000x400&text=[img 2]" />
-        <img src="http://placehold.it/1000x400&text=[img 3]" />
-        <img src="http://placehold.it/1000x400&text=[img 4]" />
-      </div>
-      
-      <hr />
-    </div>
-  </div>
-  
-  
-  <!-- Three-up Content Blocks -->
-  
-  <div class="row">
-  
-    <div class="four columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-    </div>
-    
-    <div class="four columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-    </div>
-    
-    <div class="four columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-    </div>
-    
-  </div>
-  
-  
-  <!-- Call to Action Panel -->
-  <div class="row">
-    <div class="twelve columns">
-    
-      <div class="panel">
-        <h4>Get in touch!</h4>
-            
-        <div class="row">
-          <div class="nine columns">
-            <p>We'd love to hear from you, you attractive person you.</p>
-          </div>
-          <div class="three columns">
-            <a href="#" class="radius button right">Contact Us</a>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
-  
-  <!-- Footer -->
-  
-  <footer class="row">
-    <div class="twelve columns">
-      <hr />
-      <div class="row">
-        <div class="six columns">
-          <p>&copy; Copyright no one at all. Go to town.</p>
-        </div>
-        <div class="six columns">
-          <ul class="link-list right">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div> 
-  </footer>
-  
-  <!-- Included JS Files (Uncompressed) -->
-  <!--
-  
-  <script src="javascripts/jquery.js"></script>
-  
-  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
-  
-  <script src="javascripts/jquery.foundation.forms.js"></script>
-  
-  <script src="javascripts/jquery.foundation.reveal.js"></script>
-  
-  <script src="javascripts/jquery.foundation.orbit.js"></script>
-  
-  <script src="javascripts/jquery.foundation.navigation.js"></script>
-  
-  <script src="javascripts/jquery.foundation.buttons.js"></script>
-  
-  <script src="javascripts/jquery.foundation.tabs.js"></script>
-  
-  <script src="javascripts/jquery.foundation.tooltips.js"></script>
-  
-  <script src="javascripts/jquery.foundation.accordion.js"></script>
-  
-  <script src="javascripts/jquery.placeholder.js"></script>
-  
-  <script src="javascripts/jquery.foundation.alerts.js"></script>
-  
-  <script src="javascripts/jquery.foundation.topbar.js"></script>
-  
-  -->
-  
-  <!-- Included JS Files (Compressed) -->
-  <script src="javascripts/jquery.js"></script>
-  <script src="javascripts/foundation.min.js"></script>
-  
-  <!-- Initialize JS Plugins -->
-  <script src="javascripts/app.js"></script>
-
+    <title></title>
+    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <!-- For twitter -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script src="jquery.tweet.js" charset="utf-8"></script>
   <script type="text/javascript">
-     $(window).load(function() {
-         $('#slider').orbit();
-     });
+    function randomString(length) {
+      var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz'.split('');
+      var str = '';
+      for (var i = 0; i < length; i++) {
+        str += chars[Math.floor(Math.random() * chars.length)];
+      }
+      return str;
+    }
+    var rnd = randomString(8);
+
+    jQuery(function($) {
+      $(".rnd").replaceWith(rnd);
+
+
+      $(".demo .code").hide().each(function(i,e){
+        $(e).before($('<a class="show-code" href="#">Show code &raquo;</a>').
+                      click(function(ev) {
+                        $(e).slideToggle();
+                        $(this).hide();
+                        ev.preventDefault();
+                      }));
+
+      }).each(function(i, e){ eval($(e).text()); });
+    });
   </script>
-  
-</body>
-</html>
+
+  <script type='text/javascript'>
+    jQuery(function($){
+        $(".tweet").tweet({
+            username: "stephenfjohnson",
+            join_text: "auto",
+            avatar_size: 32,
+            count: 5,
+            auto_join_text_default: "we said,", 
+            auto_join_text_ed: "we",
+            auto_join_text_ing: "we were",
+            auto_join_text_reply: "we replied to",
+            auto_join_text_url: "we were checking out",
+            loading_text: "loading tweets..."
+        });
+    });
+</script>
+
+  <!-- End For Twitter -->
+
+    <meta charset="UTF-8" />
+</head>
+<!-- Body is our Wrapper -->
+<body>
+<div class="wrapper">
+  <header>
+   <a href="#"> <h1>Hello! </h1> </a>
+    <h6>Welcome to my theme! </h6>
+
+    <nav>
+      <ul>
+        <Li><a href="#">Home</a></Li>
+        <li><a href="#">Portfolio</a></li>
+        <Li><a href="#">Blog</a></Li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introducton -->
+  <div class="introduction">
+    I work on SEO, Web Design and <strong>High Quality Graphics</strong> for your website. Please contact me for a free estimate. I love to develop my websites on <em>Wordpress</em> with a little bit of jquery. 
+  </div>
+
+<!-- Slider -->
+  <div id="slider">
+    <img src="images/slides/slide1.png" alt="Space" />
+    <span class="left navControl">Previous</span>
+    <span class="right navControl">Next</span>
+    <ul>
+      <li></li>
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+<!-- End of Slider -->
+
+<!-- "The Pitch" -->
+  <div class="pitch left">
+    <div></div>
+    <h6>Who are we?</h6>
+    <P>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non vestibulum dolor. Quisque auctor felis eget orci sagittis molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque quis velit metus, in luctus eros. Quisque fringilla consequat nibh sit amet condimentum.
+    </P>
+  </div>
+
+  <div class="pitch middle">
+    <div></div>
+    <h6>Check out our Portfolo1</h6>
+    <P>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non vestibulum dolor. Quisque auctor felis eget orci sagittis molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque quis velit metus, in luctus eros.Quisque fringilla consequat nibh sit amet condimentum.
+    </P>
+  </div>
+
+  <div class="pitch right">
+    <div></div>
+    <h6>Our latest News</h6>
+    <P>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non vestibulum dolor. Quisque auctor felis eget orci sagittis molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque quis velit metus, in luctus eros. Quisque fringilla consequat nibh sit amet condimentum.
+    </P>
+  </div>
+
+<!-- Newsletter -->
+  <section class="newsletters">
+    <div class="left">
+      <h4> Join our Newsletter </h4>
+      <h5> We heve some wonderful news to share! </h5>
+    </div>
+
+    <div class="right">
+      <em>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non vestibulum dolor. Quisque auctor felis eget orci sagittis molestie. 
+      </em>
+
+      <button>Sign Up</button>
+    </div>
+
+  </section>
+
+</div>
+
+<!-- Aside from out main content -->
+<aside>
+  <div class="wrapper">
+    <section class="about">
+      <h6> About Us </h6>
+      <P>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non vestibulum dolor. Quisque auctor felis eget orci sagittis molestie.
+      </P>
+
+    <section class="photostream">
+      <h6> About Us </h6>
+      <P>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non vestibulum dolor. Quisque auctor felis eget orci sagittis molestie.
+      </P>
+    </section>
+
+    <section class="tweets">
+      <h6> Tweets </h6>
+      <P>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non vestibulum dolor. Quisque auctor felis eget orci sagittis molestie.
+      </P>
+
+        <div class='tweet query'></div>
+
+        
