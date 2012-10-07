@@ -1,0 +1,68 @@
+@import "compass";
+@import "partials/normalize";
+@import "partials/blankwork";
+@import "partials/settings";
+@import "spr/*.png";
+
+$_columns: 12 ;      // Total number of columns
+$_column-width: 60px ;   // Width of a single column
+$_gutter: 20px ;     // Width of the gutter
+
+.wrapper {
+  @include wrapper;
+}
+
+body {
+  background-color: #f8;
+}
+
+header {
+  @include container;
+  padding: 20px;
+  
+  h1 {
+    @include spr-sprite("logo");
+    @include hide-text;
+    height: 150px;
+  }
+
+  h1, h6 {
+    @include column(2)
+  }
+  nav {
+    @include column($_columns - 4)
+  }
+}
+
+.introduction #slider {
+  @include fullwidth;
+}
+
+
+.pitch {
+  @include column($_columns / 3);
+
+  div {
+    width: 320px;
+    height: 129px;
+    background-color: yellow;
+  }
+
+  &.left { @include first; }
+  &.right { @include last; }
+}
+
+aside {
+  section {
+    @include column($_columns / 4);
+
+  }
+
+  .about {
+    @include first;
+  }
+
+  .contact {
+    @include last;
+  }
+}
