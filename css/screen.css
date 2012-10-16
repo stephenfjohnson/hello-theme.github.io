@@ -313,7 +313,7 @@ table {
   border-spacing: 0; }
 
 .spr-sprite, header h1 {
-  background: url('/images/spr-s3ae9ffb868.png') no-repeat; }
+  background: url('../images/spr-s3ae9ffb868.png') no-repeat; }
 
 .wrapper {
   width: 960px;
@@ -333,13 +333,15 @@ header {
   display: inline;
   float: left;
   width: 960px;
-  padding: 20px; }
+  padding: 40px; }
   header h1 {
     background-position: 0 0;
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    height: 150px; }
+    height: 146px;
+    width: 338px;
+    padding-right: 10px; }
   header h1, header h6 {
     display: inline;
     float: left;
