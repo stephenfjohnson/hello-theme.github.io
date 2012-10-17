@@ -315,6 +315,24 @@ table {
 .spr-sprite, header h1 {
   background: url('../images/spr-s3ae9ffb868.png') no-repeat; }
 
+/*-------------------------------*/
+/* Variables 
+/*-------------------------------*/
+/*-------------------------------*/
+/*  Mixens
+/*-------------------------------*/
+/*-------------------------------*/
+/*  Sprites 
+/*-------------------------------*/
+.spr-sprite, header h1 {
+  background: url('../images/spr-s3ae9ffb868.png') no-repeat; }
+
+.pitch-sprite, .pitch.left div, .pitch.middle div, .pitch.right div {
+  background: url('../images/pitch-s9b18088ee2.png') no-repeat; }
+
+/*-------------------------------*/
+/*  General  
+/*-------------------------------*/
 .wrapper {
   width: 960px;
   margin-left: auto;
@@ -327,45 +345,127 @@ table {
     clear: both; }
 
 body {
-  background-color: #f8; }
+  background-color: #f8f8f8;
+  color: #8d8f92;
+  font-size: 12px; }
 
+a {
+  color: #e74e3a; }
+  a:hover {
+    color: #e95e4c; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: darkFont; }
+
+h1 {
+  font-size: 26px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 22px; }
+
+h4 {
+  font-size: 20px; }
+
+h5 {
+  font-size: 18px; }
+
+h6 {
+  font-size: 16px; }
+
+/*-------------------------------*/
+/*  Header
+/*-------------------------------*/
 header {
   display: inline;
   float: left;
   width: 960px;
-  padding: 40px; }
+  padding-top: 40px; }
   header h1 {
     background-position: 0 0;
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    height: 146px;
+    height: 145px;
     width: 338px;
-    padding-right: 10px; }
+    padding-right: 10px;
+    margin-top: -40px; }
+  header h6 {
+    margin: 0;
+    color: #707070; }
   header h1, header h6 {
     display: inline;
     float: left;
     margin-left: 10px;
     margin-right: 10px;
     width: 140px; }
-  header nav {
-    display: inline;
-    float: left;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 620px; }
+
+/*-------------------------------*/
+/*  Navigation
+/*-------------------------------*/
+nav {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 620px;
+  font-size: 15px;
+  font-weight: bold; }
+  nav a {
+    text-decoration: none;
+    color: #808286; }
+    nav a:hover {
+      color: #36b679; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    *zoom: 1;
+    float: right;
+    padding: 0 10px; }
+    nav ul:before, nav ul:after {
+      content: "";
+      display: table; }
+    nav ul:after {
+      clear: both; }
+    nav ul li {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0;
+      white-space: nowrap;
+      display: inline;
+      float: left;
+      padding-left: 4px;
+      padding-right: 4px; }
+      nav ul li:first-child, nav ul li.first {
+        padding-left: 0; }
+      nav ul li:last-child {
+        padding-right: 0; }
+      nav ul li.last {
+        padding-right: 0; }
+
+li {
+  text-align: right;
+  margin-right: 10px; }
 
 .introduction #slider {
   display: inline;
   float: left;
   width: 960px; }
 
+/*-------------------------------*/
+/*  Pitch
+/*-------------------------------*/
 .pitch {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
-  width: 300px; }
+  width: 300px;
+  padding-right: 10px;
+  box-sizing: border-box; }
   .pitch div {
     width: 320px;
     height: 129px;
@@ -374,6 +474,12 @@ header {
     margin-left: 0; }
   .pitch.right {
     margin-right: 0; }
+  .pitch.left div {
+    background-position: 0 -258px; }
+  .pitch.middle div {
+    background-position: 0 0; }
+  .pitch.right div {
+    background-position: 0 -129px; }
 
 aside section {
   display: inline;
