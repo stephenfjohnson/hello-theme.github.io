@@ -1,0 +1,32 @@
+.pitch {
+  @include column($_columns / 3);
+  padding-right: $padding;
+  box-sizing: border-box;
+  div {
+    width: 320px;
+    height: 129px;
+    background-color: yellow;
+  }
+
+  &.left { @include first; }
+  &.right { @include last; }
+
+  &.left div { @include pitch-sprite(pitch1); }
+  &.middle div { @include pitch-sprite(pitch2); }
+  &.right div { @include pitch-sprite(pitch3); }
+}
+
+aside {
+  section {
+    @include column($_columns / 4);
+
+  }
+
+  .about {
+    @include first;
+  }
+
+  .contact {
+    @include last;
+  }
+}

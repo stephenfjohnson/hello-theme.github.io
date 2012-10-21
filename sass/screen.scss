@@ -2,203 +2,21 @@
 @import "partials/normalize";
 @import "partials/blankwork";
 @import "partials/settings";
-@import "spr/*.png";
 
+
+@import "partials/variables";
+@import "partials/mixins";
+
+
+// Import Theme
+@import "theme/general";
+@import "theme/header";
+@import "theme/navigation";
+@import "theme/introduction";
+@import "theme/pitch";
+@import "theme/footer";
+
+//Layout
 $_columns: 12 ;      // Total number of columns
 $_column-width: 60px ;   // Width of a single column
 $_gutter: 20px ;     // Width of the gutter
-
-/*-------------------------------*/
-/* Variables 
-/*-------------------------------*/
-
-//Generic Colors:
-$bgColor: #f8f8f8;
-
-// Font Colors: 
-$lightFont: #8d8f92;
-$darkFont: #707070;
-$emColor: #36b679;
-
-// Links 
-$linkColor: #e95e4c;
-$linkHover: darken($linkColor, 4%);
-
-// Size: 
-$font_size: 12px;
-$lineHover: 20px;
-
-$padding: 10px;
-
-/*-------------------------------*/
-/*  Mixens
-/*-------------------------------*/
-
-
-@mixin setHeadingSize($from, $to, $baseSize, $subtractBy) {
-  $currentNumber: $from;
-  $currentSize: $baseSize;
-  $to: $to + 1;
-    // This is a loop
-    // First time h1,
-    // Ect.
-    @while $currentNumber != $to {
-      h#{$currentNumber} {
-        font-size: $currentSize;
-
-      }
-
-      $currentNumber: $currentNumber + 1; // 1, 2, 3, 4, 5, 6, 
-      $currentSize: $currentSize - $subtractBy;  
-
-    }
-    
-}
-
-/*-------------------------------*/
-/*  Sprites 
-/*-------------------------------*/
-
-@import "spr/*.png";
-@import "pitch/*.png";
-@mixin spr($img) {
-  @include spr-sprite($img);
-}
-
-/*-------------------------------*/
-/*  General  
-/*-------------------------------*/
-
-
-
-.wrapper {
-  @include wrapper;
-}
-
-body {
-  background-color: $bgColor;
-  color: $lightFont;
-  font-size: $font_size;
-  // line-height: $line_height;
-}
-
-a {
-  color: $linkHover;
-  &:hover {
-    color: $linkColor;
-  } 
-}
-
-#{headings(all)} {
-  color: darkFont;
-}
-
-@include setHeadingSize(1, 6, 26px, 2px);
-
-
-/*-------------------------------*/
-/*  Header
-/*-------------------------------*/
-
-
-
-header {
-  @include container;
-  padding-top: 40px;
-  
-  h1 {
-    @include spr("logo");
-    @include hide-text;
-    height: 145px;
-    width: 338px;
-    padding-right: 10px;
-    margin-top: -40px;
-  }
-
-  h6 {
-    margin: 0;
-    color: $darkFont;
-  }
-
-  h1, h6 {
-    @include column(2)
-  }
-}
-
-
-
-/*-------------------------------*/
-/*  Navigation
-/*-------------------------------*/
-
-
-nav {
-  @include column($_columns - 4);
-
-  font: {
-    size: 15px;
-    weight: bold;
-}
-
-a {
-  text-decoration: none;
-  color: darken($lightFont, 5%);
-  &:hover {
-    color: $emColor;
-    }
-  }
-
-  ul {
-    @include horizontal-list;
-    float: right;
-    padding: 0 $padding;
-  }
-}
-
-li {
-  text-align: right;
-  margin-right: $padding;
-}
-
-.introduction #slider {
-  @include fullwidth;
-}
-
-
-/*-------------------------------*/
-/*  Pitch
-/*-------------------------------*/
-
-
-.pitch {
-  @include column($_columns / 3);
-  padding-right: $padding;
-  box-sizing: border-box;
-  div {
-    width: 320px;
-    height: 129px;
-    background-color: yellow;
-  }
-
-  &.left { @include first; }
-  &.right { @include last; }
-
-  &.left div { @include pitch-sprite(pitch1); }
-  &.middle div { @include pitch-sprite(pitch2); }
-  &.right div { @include pitch-sprite(pitch3); }
-}
-
-aside {
-  section {
-    @include column($_columns / 4);
-
-  }
-
-  .about {
-    @include first;
-  }
-
-  .contact {
-    @include last;
-  }
-}

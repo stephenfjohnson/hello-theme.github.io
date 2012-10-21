@@ -1,7 +1,9 @@
-@mixin first {
-	@include alpha;
-}
+/*-------------------------------*/
+/*  Sprites 
+/*-------------------------------*/
 
-@mixin last {
-	@include omega;
+@import "spr/*.png";
+@import "pitch/*.png";
+@mixin spr($img) {
+  @include spr-sprite($img);
 }

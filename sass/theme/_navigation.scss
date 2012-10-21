@@ -1,0 +1,31 @@
+nav {
+  @include column($_columns - 4);
+
+  font: {
+    size: 15px;
+    weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: darken($lightFont, 5%);
+  &:hover {
+    color: $emColor;
+    }
+  }
+
+  ul {
+    @include horizontal-list;
+    float: right;
+    padding: 0 $padding;
+  }
+}
+
+li {
+  text-align: right;
+  margin-right: $padding;
+}
+
+.introduction #slider {
+  @include fullwidth;
+}

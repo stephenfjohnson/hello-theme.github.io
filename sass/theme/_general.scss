@@ -1,0 +1,24 @@
+.wrapper {
+  @include wrapper;
+}
+
+body {
+  background-color: $bgColor;
+  color: $lightFont;
+  font-size: $font_size;
+  // line-height: $line_height;
+}
+
+a {
+  color: $linkHover;
+  &:hover {
+    color: $linkColor;
+  } 
+}
+
+#{headings(all)} {
+  color: darkFont;
+}
+
+@include setHeadingSize(1, 6, 26px, 2px);
+

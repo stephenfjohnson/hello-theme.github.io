@@ -1,0 +1,27 @@
+@mixin setHeadingSize($from, $to, $baseSize, $subtractBy) {
+  $currentNumber: $from;
+  $currentSize: $baseSize;
+  $to: $to + 1;
+    // This is a loop
+    // First time h1,
+    // Ect.
+    @while $currentNumber != $to {
+      h#{$currentNumber} {
+        font-size: $currentSize;
+
+      }
+
+      $currentNumber: $currentNumber + 1; // 1, 2, 3, 4, 5, 6, 
+      $currentSize: $currentSize - $subtractBy;  
+
+    }
+    
+}
+
+@mixin first {
+  @include alpha;
+}
+
+@mixin last {
+  @include omega;
+}

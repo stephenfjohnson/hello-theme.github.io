@@ -312,15 +312,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.spr-sprite, header h1 {
-  background: url('../images/spr-s3ae9ffb868.png') no-repeat; }
-
-/*-------------------------------*/
-/* Variables 
-/*-------------------------------*/
-/*-------------------------------*/
-/*  Mixens
-/*-------------------------------*/
 /*-------------------------------*/
 /*  Sprites 
 /*-------------------------------*/
@@ -331,7 +322,7 @@ table {
   background: url('../images/pitch-s9b18088ee2.png') no-repeat; }
 
 /*-------------------------------*/
-/*  General  
+/* Variables 
 /*-------------------------------*/
 .wrapper {
   width: 960px;
@@ -375,9 +366,6 @@ h5 {
 h6 {
   font-size: 16px; }
 
-/*-------------------------------*/
-/*  Header
-/*-------------------------------*/
 header {
   display: inline;
   float: left;
@@ -402,9 +390,6 @@ header {
     margin-right: 10px;
     width: 140px; }
 
-/*-------------------------------*/
-/*  Navigation
-/*-------------------------------*/
 nav {
   display: inline;
   float: left;
@@ -455,9 +440,30 @@ li {
   float: left;
   width: 960px; }
 
-/*-------------------------------*/
-/*  Pitch
-/*-------------------------------*/
+/*
+.introduction {
+	@extend .pattern;
+	@include fullwidth($_subtract: $padding * 4);
+	padding: $padding * 2;
+	margin: $verticalSpace 0 0;
+*/
+/*
+	text-align: center;
+	font-family: $emFont;
+	font-style: italic;
+	font-size: 24px;
+
+	border-top: 1px dotted #c6c6c6;
+	line-height: 36px;
+	color: $darkFont;
+
+	em {
+		color: $emColor
+		font-weignt: bold;
+	}
+}
+
+*/
 .pitch {
   display: inline;
   float: left;
