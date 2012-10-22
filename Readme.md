@@ -1,6 +1,6 @@
 #Hello Theme
 
-Html Template with sass and compass. I hpe to convert it to concrete5 or Wordpress in the future.
+Html Template with sass and compass. I hope to convert it to concrete5 or Wordpress in the future.
 I pushed the first code at October 4, 2012 
 
 ## I started Here

@@ -1,12 +1,11 @@
-/*
+
 .introduction {
 	@extend .pattern;
 	@include fullwidth($_subtract: $padding * 4);
 	padding: $padding * 2;
 	margin: $verticalSpace 0 0;
-*/
 
-/*
+
 	text-align: center;
 	font-family: $emFont;
 	font-style: italic;
@@ -17,9 +16,8 @@
 	color: $darkFont;
 
 	em {
-		color: $emColor
+		color: $emColor;
 		font-weignt: bold;
 	}
 }
 
-*/

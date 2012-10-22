@@ -1,3 +1,7 @@
+.pattern {
+  background: image-url('pattern.png') repeat;
+}
+
 .wrapper {
   @include wrapper;
 }

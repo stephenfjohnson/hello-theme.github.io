@@ -1,0 +1,55 @@
+#slider {
+	@include fullwidth;
+	@extend .pattern;
+
+	padding-bottom: $padding / 2;
+	position: relative;
+
+	.navControl {
+		@include hide-text;
+		position: absolute;
+		top: 45%;
+
+		display: block;
+		width: 45px; 
+		height: 45px;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&.left {
+			@include spr(arrowLeft);
+			left: $padding;
+		}
+
+		&.right {
+			@include spr(arrowRight);
+			right: $padding;
+		}
+	}
+
+	ul{
+		@include no-bullets;
+		position: absolute;
+		bottom: $padding;
+		left: 0;
+
+		height: 10px;
+		width: get_width(3);
+
+	}
+
+	li {
+		float: left;
+		@include spr(dot);
+		width: 10px;
+		height: 10px;
+		padding-right: 7px;
+
+		&.active {
+			@include spr(dotEmpty);
+		}
+
+	}
+}

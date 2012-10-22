@@ -315,8 +315,8 @@ table {
 /*-------------------------------*/
 /*  Sprites 
 /*-------------------------------*/
-.spr-sprite, header h1 {
-  background: url('../images/spr-s3ae9ffb868.png') no-repeat; }
+.spr-sprite, header h1, #slider .navControl.left, #slider .navControl.right, #slider li, #slider li.active {
+  background: url('../images/spr-s965e37d217.png') no-repeat; }
 
 .pitch-sprite, .pitch.left div, .pitch.middle div, .pitch.right div {
   background: url('../images/pitch-s9b18088ee2.png') no-repeat; }
@@ -324,6 +324,9 @@ table {
 /*-------------------------------*/
 /* Variables 
 /*-------------------------------*/
+.pattern, .introduction, #slider {
+  background: url('../images/pattern.png?1350855601') repeat; }
+
 .wrapper {
   width: 960px;
   margin-left: auto;
@@ -435,35 +438,70 @@ li {
   text-align: right;
   margin-right: 10px; }
 
-.introduction #slider {
+.introduction {
   display: inline;
   float: left;
-  width: 960px; }
+  width: 920px;
+  padding: 20px;
+  margin: 50px 0 0;
+  text-align: center;
+  font-family: "Droid Serif", serif;
+  font-style: italic;
+  font-size: 24px;
+  border-top: 1px dotted #c6c6c6;
+  line-height: 36px;
+  color: #707070; }
+  .introduction em {
+    color: #36b679;
+    font-weignt: bold; }
 
-/*
-.introduction {
-	@extend .pattern;
-	@include fullwidth($_subtract: $padding * 4);
-	padding: $padding * 2;
-	margin: $verticalSpace 0 0;
-*/
-/*
-	text-align: center;
-	font-family: $emFont;
-	font-style: italic;
-	font-size: 24px;
+#slider {
+  display: inline;
+  float: left;
+  width: 960px;
+  padding-bottom: 5px;
+  position: relative; }
+  #slider .navControl {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    position: absolute;
+    top: 45%;
+    display: block;
+    width: 45px;
+    height: 45px; }
+    #slider .navControl:hover {
+      cursor: pointer; }
+    #slider .navControl.left {
+      background-position: 0 -281px;
+      left: 10px; }
+      #slider .navControl.left:hover, #slider .navControl.left.arrowLeft_hover, #slider .navControl.left.arrowLeft-hover {
+        background-position: 0 -236px; }
+    #slider .navControl.right {
+      background-position: 0 -146px;
+      right: 10px; }
+      #slider .navControl.right:hover, #slider .navControl.right.arrowRight_hover, #slider .navControl.right.arrowRight-hover {
+        background-position: 0 -191px; }
+  #slider ul {
+    list-style: none;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    height: 10px;
+    width: 220px; }
+    #slider ul li {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0; }
+  #slider li {
+    float: left;
+    background-position: 0 -480px;
+    width: 10px;
+    height: 10px;
+    padding-right: 7px; }
+    #slider li.active {
+      background-position: 0 -422px; }
 
-	border-top: 1px dotted #c6c6c6;
-	line-height: 36px;
-	color: $darkFont;
-
-	em {
-		color: $emColor
-		font-weignt: bold;
-	}
-}
-
-*/
 .pitch {
   display: inline;
   float: left;
