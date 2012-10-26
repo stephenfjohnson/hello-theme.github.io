@@ -1,3 +1,9 @@
+/*--------------------*/
+/* Screen */
+/*--------------------*/
+/*--------------------*/
+/* Normalize */
+/*--------------------*/
 /* normalize.css v2.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -312,19 +318,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*-------------------------------*/
-/*  Sprites 
-/*-------------------------------*/
-.spr-sprite, header h1, #slider .navControl.left, #slider .navControl.right, #slider li, #slider li.active {
-  background: url('../images/spr-s965e37d217.png') no-repeat; }
+/*--------------------*/
+/* Blankwork */
+/*--------------------*/
+/*--------------------*/
+/* Settings */
+/*--------------------*/
+.spr-sprite, header h1, #slider .navControl.left, #slider .navControl.right, #slider li, #slider li.active, aside .contact .facebook:before, aside .contact .twitter:before, aside .contact .github:before, aside .contact .google:before {
+  background: url('../images/spr-s5ca5f06597.png') no-repeat; }
 
 .pitch-sprite, .pitch.left div, .pitch.middle div, .pitch.right div {
   background: url('../images/pitch-s9b18088ee2.png') no-repeat; }
 
-/*-------------------------------*/
-/* Variables 
-/*-------------------------------*/
-.pattern, .introduction, #slider {
+/*--------------------*/
+/* Variables */
+/*--------------------*/
+/*--------------------*/
+/* Mixins */
+/*--------------------*/
+/*--------------------*/
+/* General */
+/*--------------------*/
+.pattern, .introduction, #slider, .newsletter, aside:before {
   background: url('../images/pattern.png?1350855601') repeat; }
 
 .wrapper {
@@ -352,23 +367,26 @@ h1, h2, h3, h4, h5, h6 {
   color: darkFont; }
 
 h1 {
-  font-size: 26px; }
-
-h2 {
   font-size: 24px; }
 
-h3 {
+h2 {
   font-size: 22px; }
 
-h4 {
+h3 {
   font-size: 20px; }
 
-h5 {
+h4 {
   font-size: 18px; }
 
-h6 {
+h5 {
   font-size: 16px; }
 
+h6 {
+  font-size: 14px; }
+
+/*--------------------*/
+/* Header */
+/*--------------------*/
 header {
   display: inline;
   float: left;
@@ -393,6 +411,9 @@ header {
     margin-right: 10px;
     width: 140px; }
 
+/*--------------------*/
+/* Navigation */
+/*--------------------*/
 nav {
   display: inline;
   float: left;
@@ -438,6 +459,9 @@ li {
   text-align: right;
   margin-right: 10px; }
 
+/*--------------------*/
+/* Introduction */
+/*--------------------*/
 .introduction {
   display: inline;
   float: left;
@@ -455,6 +479,9 @@ li {
     color: #36b679;
     font-weignt: bold; }
 
+/*--------------------*/
+/* Slider */
+/*--------------------*/
 #slider {
   display: inline;
   float: left;
@@ -502,6 +529,9 @@ li {
     #slider li.active {
       background-position: 0 -422px; }
 
+/*--------------------*/
+/* Pitch */
+/*--------------------*/
 .pitch {
   display: inline;
   float: left;
@@ -525,13 +555,187 @@ li {
   .pitch.right div {
     background-position: 0 -129px; }
 
-aside section {
+/*--------------------*/
+/* Newsletter */
+/*--------------------*/
+.newsletter {
   display: inline;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 220px; }
-aside .about {
-  margin-left: 0; }
-aside .contact {
-  margin-right: 0; }
+  width: 960px;
+  padding-top: 10px;
+  margin-top: 50px;
+  font-size: 14px; }
+  .newsletter div {
+    padding: 15px 10px;
+    margin: 0;
+    background-color: #fdfdfd;
+    height: 50px;
+    border: 1px solid #ebebeb; }
+  .newsletter .left {
+    background: -webkit-linear-gradient(-77deg, #fbfbfb, #f3f3f3);
+    background: -moz-linear-gradient(-77deg, #fbfbfb, #f3f3f3);
+    background: -o-linear-gradient(-77deg, #fbfbfb, #f3f3f3);
+    background: linear-gradient(-77deg, #fbfbfb, #f3f3f3);
+    display: inline;
+    float: left;
+    width: 219px;
+    border-right: 0; }
+    .newsletter .left h4, .newsletter .left h5 {
+      margin: 5px;
+      color: #707070; }
+    .newsletter .left h5 {
+      font-size: 10px;
+      color: #a7a9ab; }
+  .newsletter .right {
+    display: inline;
+    float: left;
+    width: 698px;
+    font-family: "Droid Serif", serif; }
+    .newsletter .right em {
+      margin-top: 5px;
+      display: inline;
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 540px; }
+  .newsletter button {
+    border-radius: 25px;
+    padding: 10px 33px;
+    float: right;
+    font-size: 13px;
+    color: #fff;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f28375), color-stop(100%, #e3341e));
+    background: -webkit-linear-gradient(#f28375, #e3341e);
+    background: -moz-linear-gradient(#f28375, #e3341e);
+    background: -o-linear-gradient(#f28375, #e3341e);
+    background: linear-gradient(#f28375, #e3341e);
+    -webkit-box-shadow: #eaeaea 0 0 0 4px, rgba(255, 255, 255, 0.25) 0 1px 0 1px inset;
+    -moz-box-shadow: #eaeaea 0 0 0 4px, rgba(255, 255, 255, 0.25) 0 1px 0 1px inset;
+    box-shadow: #eaeaea 0 0 0 4px, rgba(255, 255, 255, 0.25) 0 1px 0 1px inset;
+    border: #e95d4b 1px solid; }
+    .newsletter button:hover {
+      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fb9386), color-stop(100%, #f24029));
+      background: -webkit-linear-gradient(#fb9386, #f24029);
+      background: -moz-linear-gradient(#fb9386, #f24029);
+      background: -o-linear-gradient(#fb9386, #f24029);
+      background: linear-gradient(#fb9386, #f24029);
+      -webkit-box-shadow: #eaeaea 0 0 0 4px, rgba(255, 255, 255, 0.25) 0 1px 0 1px inset;
+      -moz-box-shadow: #eaeaea 0 0 0 4px, rgba(255, 255, 255, 0.25) 0 1px 0 1px inset;
+      box-shadow: #eaeaea 0 0 0 4px, rgba(255, 255, 255, 0.25) 0 1px 0 1px inset;
+      border: #f56b59 1px solid; }
+
+/*--------------------*/
+/* Footer */
+/*--------------------*/
+aside {
+  background-color: #ebeef1;
+  border-top: #e1e5ea solid 5px;
+  margin-top: 50px;
+  padding: 50px 0; }
+  aside:before {
+    content: "";
+    display: block;
+    height: 10px;
+    margin-top: -65px; }
+  aside section {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 210px;
+    padding-right: 10px; }
+  aside .about {
+    margin-left: 0; }
+  aside .contact {
+    margin-right: 0; }
+    aside .contact .facebook {
+      float: left;
+      line-height: 34px;
+      margin-bottom: 12px; }
+      aside .contact .facebook:before {
+        content: "";
+        widows: 48px;
+        height: 48px;
+        float: left;
+        display: block;
+        margin-right: 10px;
+        background-position: 0 -490px; }
+    aside .contact .twitter {
+      float: left;
+      line-height: 34px;
+      margin-bottom: 12px; }
+      aside .contact .twitter:before {
+        content: "";
+        widows: 48px;
+        height: 48px;
+        float: left;
+        display: block;
+        margin-right: 10px;
+        background-position: 0 -374px; }
+    aside .contact .github {
+      float: left;
+      line-height: 34px;
+      margin-bottom: 12px; }
+      aside .contact .github:before {
+        content: "";
+        widows: 48px;
+        height: 48px;
+        float: left;
+        display: block;
+        margin-right: 10px;
+        background-position: 0 -432px; }
+    aside .contact .google {
+      float: left;
+      line-height: 34px;
+      margin-bottom: 12px; }
+      aside .contact .google:before {
+        content: "";
+        widows: 48px;
+        height: 48px;
+        float: left;
+        display: block;
+        margin-right: 10px;
+        background-position: 0 -326px; }
+  aside .tweets {
+    list-style: none;
+    display: block;
+    font-size: 12px; }
+    aside .tweets li {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0; }
+    aside .tweets span {
+      font-size: 11px;
+      color: #a7a9ab;
+      display: block;
+      margin: 0 0 10px; }
+    aside .tweets .button {
+      border-radius: 25px;
+      padding: 10px 33px;
+      float: left;
+      font-size: 13px;
+      color: #fff;
+      text-decoration: none;
+      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f28375), color-stop(100%, #e3341e));
+      background: -webkit-linear-gradient(#f28375, #e3341e);
+      background: -moz-linear-gradient(#f28375, #e3341e);
+      background: -o-linear-gradient(#f28375, #e3341e);
+      background: linear-gradient(#f28375, #e3341e);
+      -webkit-box-shadow: #eaeaea 0 0 0 4px, rgba(255, 255, 255, 0.25) 0 1px 0 1px inset;
+      -moz-box-shadow: #eaeaea 0 0 0 4px, rgba(255, 255, 255, 0.25) 0 1px 0 1px inset;
+      box-shadow: #eaeaea 0 0 0 4px, rgba(255, 255, 255, 0.25) 0 1px 0 1px inset;
+      border: #e95d4b 1px solid; }
+      aside .tweets .button:hover {
+        background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fb9386), color-stop(100%, #f24029));
+        background: -webkit-linear-gradient(#fb9386, #f24029);
+        background: -moz-linear-gradient(#fb9386, #f24029);
+        background: -o-linear-gradient(#fb9386, #f24029);
+        background: linear-gradient(#fb9386, #f24029);
+        -webkit-box-shadow: #eaeaea 0 0 0 4px, rgba(255, 255, 255, 0.25) 0 1px 0 1px inset;
+        -moz-box-shadow: #eaeaea 0 0 0 4px, rgba(255, 255, 255, 0.25) 0 1px 0 1px inset;
+        box-shadow: #eaeaea 0 0 0 4px, rgba(255, 255, 255, 0.25) 0 1px 0 1px inset;
+        border: #f56b59 1px solid; }
+
+footer {
+  font: "Droid Serif", serif;
+  style: italic; }

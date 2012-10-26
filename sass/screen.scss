@@ -1,3 +1,7 @@
+/*--------------------*/
+/* Screen */
+/*--------------------*/
+
 @import "compass";
 @import "partials/normalize";
 @import "partials/blankwork";
@@ -15,9 +19,11 @@
 @import "theme/introduction";
 @import "theme/slider";
 @import "theme/pitch";
+@import "theme/newsletter";
 @import "theme/footer";
 
 //Layout
 $_columns: 12 ;      // Total number of columns
 $_column-width: 60px ;   // Width of a single column
 $_gutter: 20px ;     // Width of the gutter
+

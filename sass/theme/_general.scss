@@ -1,3 +1,7 @@
+/*--------------------*/
+/* General */
+/*--------------------*/
+
 .pattern {
   background: image-url('pattern.png') repeat;
 }
@@ -24,5 +28,5 @@ a {
   color: darkFont;
 }
 
-@include setHeadingSize(1, 6, 26px, 2px);
+@include setHeadingSize(1, 6, 24px, 2px);
 

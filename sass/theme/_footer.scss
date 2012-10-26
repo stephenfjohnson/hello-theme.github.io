@@ -1,0 +1,88 @@
+/*--------------------*/
+/* Footer */
+/*--------------------*/
+
+aside {
+	background-color: #ebeef1;
+	border-top: #e1e5ea solid 5px;
+	margin-top: $verticalSpace;
+	padding: $verticalSpace 0;
+
+	&:before {
+		content:"";
+		@extend .pattern;
+		display: block;
+		height: $padding;
+		margin-top: - ($padding + $verticalSpace + 5px);
+	}
+
+
+  section {
+    @include column($_columns / 4, $padding);
+    padding-right: $padding;
+  }
+
+  .about {
+    @include first;
+  }
+
+  .contact {
+    @include last;
+
+    $social: facebook, twitter, github, google;
+
+    @each $net in $social {
+    	.#{$net} {
+    		float: left;
+    		line-height: 34px;
+    		margin-bottom: 12px;
+
+    		&:before {
+    			content: "";
+    			widows: 48px; 
+    			height: 48px;
+    			float: left;
+    			display: block;
+    			margin-right: $padding;
+    			@include spr("s#{$net}");
+    		} 
+    	}
+    }
+  }
+
+  .tweets {
+  	@include no-bullets;
+  	display: block;
+  	font-size: 12px;
+  	span {
+		font-size: 11px;
+		color: lighten($lightFont, 10);
+		display: block;
+		margin: 0 0 $padding;
+  	}
+
+  	.button {
+
+		$buttonBaseColor: #e95d4b;
+
+		border-radius: 25px;
+		padding: $padding 33px;
+		float: left;
+		font-size: 13px;
+		color: #fff;
+		text-decoration: none;
+
+		@include round_button($buttonBaseColor);
+			
+	}
+  }
+
+
+}
+
+
+footer {
+	font: $emFont;
+	style: italic;
+	
+}

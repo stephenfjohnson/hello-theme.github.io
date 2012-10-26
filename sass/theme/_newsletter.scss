@@ -1,0 +1,59 @@
+/*--------------------*/
+/* Newsletter */
+/*--------------------*/
+
+.newsletter {
+	@include fullwidth;
+	@extend .pattern;
+
+	padding-top: $padding;
+	margin-top: $verticalSpace;
+
+	font-size: 14px;
+
+	div {
+		padding: $padding * 1.5 $padding;
+
+		margin: 0;
+		background-color: lighten($bgColor, 2%);
+		height: 50px;
+		border: 1px solid #ebebeb;
+	}
+
+	.left {
+		@include background (
+			linear-gradient(
+				-77deg,
+				lighten($bgColor, 1%),
+				darken($bgColor, 2%)
+				)
+			);
+		@include container(3, $padding * 2 + 1px);
+		border-right: 0;
+
+		h4, h5 { margin: $padding / 2; color: $darkFont;}
+		h5 { font-size: 10px; color: lighten( $lightFont, 10%); }
+	}
+
+	.right {
+		@include container (9, $padding * 2 + 2px);
+		font-family: $emFont;
+
+			em {
+				margin-top: $padding / 2;
+				@include column(7);
+			}
+		}
+
+		button {
+			$buttonBaseColor: #e95d4b;
+
+			border-radius: 25px;
+			padding: $padding 33px;
+			float: right;
+			font-size: 13px;
+			color: #fff;
+
+			@include round_button($buttonBaseColor);
+	}
+}

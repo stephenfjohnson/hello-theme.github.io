@@ -1,3 +1,7 @@
+/*--------------------*/
+/* Mixins */
+/*--------------------*/
+
 @mixin setHeadingSize($from, $to, $baseSize, $subtractBy) {
   $currentNumber: $from;
   $currentSize: $baseSize;
@@ -24,4 +28,28 @@
 
 @mixin last {
   @include omega;
+}
+
+
+@mixin round_button($buttonBaseColor: #e95d4b) {
+  @include background(
+        linear-gradient(
+          saturate(lighten($buttonBaseColor, 10%), 5%),
+          darken($buttonBaseColor, 10%)
+          )
+        );
+      @include box-shadow(#eaeaea 0 0 0 4px, fade-out(white, 0.75)0 1px 0 1px inset);
+      border: $buttonBaseColor 1px solid;
+
+      &:hover {
+      $buttonBaseColor: saturate(lighten($buttonBaseColor, 5%), 10%);
+      @include background(
+        linear-gradient(
+          saturate(lighten($buttonBaseColor, 10%), 5%),
+          darken($buttonBaseColor, 10%)
+          )
+        );
+      @include box-shadow(#eaeaea 0 0 0 4px, fade-out(white, 0.75)0 1px 0 1px inset);
+      border: $buttonBaseColor 1px solid;
+    }
 }
