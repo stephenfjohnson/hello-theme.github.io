@@ -74,15 +74,39 @@ aside {
 
 		@include round_button($buttonBaseColor);
 			
-	}
+	 }
   }
-
 
 }
 
 
 footer {
-	font: $emFont;
-	style: italic;
-	
+	font: {
+     font: $emFont;
+	   style: italic;
+  }
+
+  background: #404449 image-url("patternDark.png") repeat-x bottom;
+  height: 88px - $padding * 4;
+  padding: $padding * 2;
+
+  color: darken($bgColor, 5%);
+
+  a {
+    color: $emColor;
+  }
 }
+
+/*
+
+#bottomLogo {
+  width: 185px;
+  height: 70px;
+  margin-top: -$padding;
+  float: right;
+  @include spr("bottomLogo")
+}
+
+*/
+
+

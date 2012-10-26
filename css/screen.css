@@ -737,5 +737,23 @@ aside {
         border: #f56b59 1px solid; }
 
 footer {
-  font: "Droid Serif", serif;
-  style: italic; }
+  font-font: "Droid Serif", serif;
+  font-style: italic;
+  background: #404449 url('../images/patternDark.png?1351227675') repeat-x bottom;
+  height: 48px;
+  padding: 20px;
+  color: #ebebeb; }
+  footer a {
+    color: #36b679; }
+
+/*
+
+#bottomLogo {
+  width: 185px;
+  height: 70px;
+  margin-top: -$padding;
+  float: right;
+  @include spr("bottomLogo")
+}
+
+*/
